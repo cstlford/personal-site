@@ -1,0 +1,137 @@
+.projectDetails {
+    margin-top: 2rem;
+}
+
+.container {
+    background-color: #e8e4dd;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #754027;
+    margin-bottom: 1rem;
+}
+
+.gridContainer {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.card {
+    background: #f8f6f3;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e0dcd5;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(48, 48, 39, 0.1);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.cardTitle {
+    font-weight: 500;
+    color: #303027;
+}
+
+.flowContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.flowItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.flowBox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #f4f1ed;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+.flowBox:hover {
+    background-color: #e8e4dd;
+}
+
+.icon {
+    color: #754027;
+}
+
+.chevron {
+    color: #754027;
+    flex-shrink: 0;
+}
+
+.description {
+    font-size: 0.875rem;
+    color: #4a4a40;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+/* Animation for hover states */
+.card,
+.flowBox {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flowBox:hover {
+    transform: translateX(4px);
+}
+
+/* Icon styles */
+.icon svg,
+.chevron svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.cardHeader .icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .gridContainer {
+        gap: 1rem;
+    }
+
+    .flowItem {
+        font-size: 0.75rem;
+    }
+
+    .description {
+        font-size: 0.75rem;
+    }
+}
