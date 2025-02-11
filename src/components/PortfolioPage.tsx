@@ -51,9 +51,10 @@ const PortfolioPage = () => {
           </div>
           <div className={styles.bioSection}>
             <p className={styles.bio}>
-              Recent Computer Science graduate from UTC (summa cum laude) with a
-              minor in entrepreneurship. Passionate about building intelligent
-              solutions that make a difference.
+              Recent Computer Science graduate (Summa Cum Laude) from UTC with a
+              minor in Entrepreneurship. Passionate about AI, software
+              development, and problem-solving, I strive to build intelligent,
+              impactful solutions that drive innovation and efficiency.
             </p>
             <a href="mailto:cstlford@gmail.com">
               <div className={styles.contactButton}>
