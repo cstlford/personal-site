@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { ExternalLink, Code, Database, Brain, Mail } from "lucide-react";
 import styles from "./PortfolioPage.module.css";
-import profile from "../assets/profile2.jpg";
+import profile from "../assets/profile.jpg";
 import ProjectDetails from "./ProjectDetails";
 
 const PortfolioPage = () => {
